@@ -27,65 +27,78 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  
 </head>
 
 <body>
 
   <!-- ======= Top Bar ======= -->
- 
+
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center header-transparent">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <div class="logo me-auto">
-        
+
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          
+
           <li><a class="nav-link scrollto" href="https://en.wikipedia.org/wiki/Laura_Bretan">About</a></li>
           <li><a class="nav-link scrollto" href="https://odysee.com/$/playlist/48abd6ebaa4929d5ae7734c875f1448bf9742280">TV Shows</a></li>
           <li><a class="nav-link scrollto" href="https://odysee.com/$/playlist/fd0a4e4b094786953a4907b5c5a2ff90c7b3ab2d">Interviews</a></li>
           <li><a class="nav-link scrollto" href="https://odysee.com/$/playlist/c25d349ad3e84039f5888a242df31703a73a44d7">Talent Shows</a></li>
-          
+
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-       <!--  <a href="https://you.com/search?q=despre+ana+maria+calita&fromSearchBar=true&tbm=youchat&cid=c2_1d0e59aa-f4a7-4890-b34c-89c5f5c86561" class="book-a-table-btn scrollto">Chat Gpt 😎</a> --> 
+      <!--  <a href="https://you.com/search?q=despre+ana+maria+calita&fromSearchBar=true&tbm=youchat&cid=c2_1d0e59aa-f4a7-4890-b34c-89c5f5c86561" class="book-a-table-btn scrollto">Chat Gpt 😎</a> -->
 
     </div>
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
   <section id="hero">
-    
-        
 
-          <!-- Slide 1 -->
-          
-          <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-2.jpg);">
-            
-            <div class="carousel-container">
-              
-              <!-- Hero Section 
-                
-                <div class="social ">
 
-        <a href="https://www.youtube.com/channel/UCbWq3GYqNESAz86yRPgJNyQ" class="youtube"><i class="bx bxl-youtube"></i></a>
-        <a href="https://open.spotify.com/artist/0Y6f7SArenwsTGRonkDGj0" class="spotify"><i class="bx bxl-spotify"></i></a>
-        <a href="https://music.apple.com/us/artist/laura-bretan/377474386" class="apple"><i class="bx bxl-apple"></i></a>
-        <a href="https://www.deezer.com/ro/artist/6381888" class="deezer"><i class="bx bxl-deezer"></i></a>
-                </div>
-            </div> 
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg);">
+          <div class="carousel-container">
+            <!-- Content for slide 1 -->
           </div>
-           -->
-       
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg);">
+          <div class="carousel-container">
+            <!-- Content for slide 2 -->
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg);">
+          <div class="carousel-container">
+            <!-- Content for slide 3 -->
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
   </section><!-- End Hero -->
 
 
@@ -93,7 +106,7 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-     
+
       <p>"Music is the ethereal bridge that connects our souls to the divine symphony of God's love." - MaRi</p>
       <div class="social-links">
         <a href="https://twitter.com/ItsLauraBretan" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -104,13 +117,14 @@
         <a href="https://music.apple.com/us/artist/laura-bretan/377474386" class="apple"><i class="bx bxl-apple"></i></a>
         <a href="https://www.deezer.com/ro/artist/6381888" class="deezer"><i class="bx bxl-deezer"></i></a>
       </div>
-      
+
       <div class="credits">
-        
+
         Unofficial site designed by <a href="">MaRi</a>
       </div>
     </div>
   </footer><!-- End Footer -->
+
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -123,6 +137,15 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    // Wait for the document to be fully loaded
+    document.addEventListener("DOMContentLoaded", function(event) {
+      // Initialize the carousel
+      var myCarousel = new bootstrap.Carousel(document.getElementById('myCarousel'), {
+        interval: 5000 // 5000 milliseconds = 5 seconds
+      });
+    });
+  </script>
 
 </body>
 
